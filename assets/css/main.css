@@ -1,4 +1,5 @@
 body {
-    background-image: url("../imgs/wall.jpg");
-    /*background-color: #cccccc;*/
+    background-image: url("../imgs/wall2.jpg");
+    background-size: 100%;
+    margin-top: -20px;
 }

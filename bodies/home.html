@@ -1,11 +1,38 @@
-<div class="screen-container">
-  <h1>Coming soon...</h1>
+<h1>Ray's Journal</h1>
+<p>My personal site where I blog about things I've been up to!</p>
+<div class="nav">
+  <ul>
+    <li><a href="./blog">Blog</a></li>
+    <li class="sep">•</li>
+    <li><a href="./projects">Project</a></li>
+    <li class="sep">•</li>
+    <li><a href="./about">About</a></li>
+  </ul>
 </div>
 
 <style media="screen">
-.screen-container {
+.root {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 15%;
+}
+
+h1 {
+  font-size: 5em;
+  font-family: Courier;
+}
+
+p {
+  font-family: Courier;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 3em 0 0 0;
+}
+
+li {
+  font-size: 1.5em;
+  margin: 0 1em;
 }
 </style>

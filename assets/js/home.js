@@ -1,4 +1,4 @@
-const pos
+let pos;
 
 window.onload = () ={
   AOS.init({

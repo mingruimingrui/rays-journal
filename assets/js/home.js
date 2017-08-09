@@ -1,12 +1,7 @@
 let pos;
 
-window.onload = () => {
-  AOS.init({
-    duration: 1000
-  });
-
-  pos = $(".nav-container").offset().top + 100;
-}
+Promise.all(AOS.init({ duration: 1000 }))
+.then(() => pos = $(".nav-container").offset().top + 100);
 
 $(window).on("scroll", () => {
   // console.log(win.scrollTop() >= 293)

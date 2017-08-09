@@ -1,0 +1,67 @@
+.main-header {
+  height: 100vh;
+  text-align: center;
+}
+
+.main-header h1 {
+  font-size: 5em;
+  font-family: Courier;
+  padding-top: 20vh;
+}
+
+.main-header p {
+  font-family: Courier;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 3em 0 0 0;
+}
+
+.main-header .nav {
+  justify-content: center;
+  transition:all 1s ease-in-out;
+}
+
+.main-header .nav * {
+  transition:all .4s ease-in-out;
+}
+
+.main-header .nav ul {
+  width: 40em;
+  justify-content: space-evenly;
+}
+
+.main-header .nav ul li {
+  margin: 0 1em;
+  font-size: 1.5em;
+}
+
+.scroll-down-container {
+  margin-top: 20vh;
+  cursor: pointer;
+
+}
+
+.scroll-down-container p {
+  margin: 0;
+  color: rgba(0,0,0,0.5);
+}
+
+.scroll-down-container span {
+  -webkit-animation: pulse 2s infinite;
+}
+
+.nav1 ul{
+  width: 40em !important;
+}
+
+.nav1 ul li{
+  font-size: 1.5em !important;
+}
+
+.nav2 ul li{
+  font-size: 1em !important;
+}
+
+.nav2 ul{
+  width: 100% !important;
+}

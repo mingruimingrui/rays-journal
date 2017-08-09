@@ -1,9 +1,11 @@
+const pos
+
 window.onload = () ={
   AOS.init({
     duration: 1000
   });
 
-  const pos = $(".nav-container").offset().top + 100;
+  pos = $(".nav-container").offset().top + 100;
 }
 
 $(window).on("scroll", () => {

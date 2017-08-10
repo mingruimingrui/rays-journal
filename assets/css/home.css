@@ -37,7 +37,7 @@
 }
 
 .scroll-down {
-  /*-webkit-animation: pulse 2s infinite;*/
+  -webkit-animation: pulse 2s infinite;
   cursor: pointer;
   font-stretch: ultra-condensed;
 }

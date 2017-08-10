@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "cour";
+  src: url("../fonts/cour.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "arapey";
+  src: url("../fonts/araypey.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "abel";
+  src: url("../fonts/abel.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "butler-regular";
+  src: url("../fonts/Butler_Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "butler-bold";
+  src: url("../fonts/Butler_Bold.otf") format("opentype");
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(-5px, 0);
+    transform: translate(-5px, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+.pulse {
+  -webkit-animation: pulse 2s infinite;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.space-letter1{
+  letter-spacing: 0.1em;
+}
+
+.space-letter2{
+  letter-spacing: 0.2em;
+}
+
+.gold {
+  color: rgb(252,219,148);
+}
+
+.gold-line {
+  height: 1px;
+  width: 10em;
+  margin: 0.6em 0 0 -4em;
+  background-color: rgb(252,219,148);
+}
+
+.gold-button {
+  color: rgb(70,70,70);
+  background-color: rgb(252,219,148);
+  padding: 0.5em 1.5em;
+  -webkit-transition: all .5s;
+  font-family: abel;
+  font-weight: bold;
+}
+
+.gold-button:hover {
+  background-color: rgb(240,240,240);
+  color: inherit;
+  text-decoration: none;
+}
+
+.trans-button {
+  color: rgb(240,240,240);
+  background-color: rgb(0,0,0,0);
+  border: rgba(128,128,128,0.5) solid 1px;
+  padding: 0.5em 1.5em;
+  -webkit-transition: all .5s;
+  font-family: abel;
+  font-weight: bold;
+}
+
+.trans-button:hover {
+  background-color: rgb(252,219,148);
+  color: rgb(70,70,70);
+  text-decoration: none;
+}
+
+.soft-border {
+  border-radius: 0px;
+}
+
+.gradient-wb {
+  background: linear-gradient(rgba(255,255,255,0.98), rgba(255,255,255,0.94));
+  height: 3px;
+}

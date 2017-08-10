@@ -1,67 +1,93 @@
-.main-header {
-  height: 100vh;
+.left-vert-bar {
+  position: absolute;
+  width: 100vh;
+  height: 80px;
+  left: 80px;
+  bottom: 0;
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+  color: rgb(176,176,182);
+  text-align: center;
+  line-height: 80px;
+  padding-left: 10vh;
+}
+
+.left-vert-bar a {
+  margin: 0 2em;
+  color: inherit;
+  font-family: abel;
+  font-stretch: ultra-condensed;
+  -webkit-transition: all .5s;
+}
+
+.left-vert-bar a:hover {
+  color: rgb(136,136,142);
+  text-decoration: none;
+}
+
+.right-vert-bar {
+  position: absolute;
+  width: 20em;
+  bottom: 0;
+  right: -16em;
+  display: inline;
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+  color: rgb(252,219,148);
+  font-size: 0.7em;
   text-align: center;
 }
 
-.main-header h1 {
-  font-size: 5em;
-  font-family: Courier;
-  padding-top: 20vh;
-}
-
-.main-header p {
-  font-family: Courier;
-  font-weight: bold;
-  color: rgba(0, 0, 0, 0.6);
-  margin: 3em 0 0 0;
-}
-
-.main-header .nav {
-  justify-content: center;
-  transition:all 1s ease-in-out;
-}
-
-.main-header .nav * {
-  transition:all .4s ease-in-out;
-}
-
-.main-header .nav ul {
-  width: 40em;
-  justify-content: space-evenly;
-}
-
-.main-header .nav ul li {
-  margin: 0 1em;
-  font-size: 1.5em;
-}
-
-.scroll-down-container {
-  margin-top: 20vh;
-  cursor: pointer;
-
-}
-
-.scroll-down-container p {
-  margin: 0;
-  color: rgba(0,0,0,0.5);
-}
-
-.scroll-down-container span {
+.scroll-down {
   -webkit-animation: pulse 2s infinite;
+  cursor: pointer;
 }
 
-.nav1 ul{
-  width: 40em !important;
+.header {
+  background-image: url('../imgs/journal.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
-.nav1 ul li{
-  font-size: 1.5em !important;
+.header .title {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,.5);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 22vh 5vw 0 0;
 }
 
-.nav2 ul li{
-  font-size: 1em !important;
+.header p {
+  font-family: abel;
+  font-size: 1.1em;
 }
 
-.nav2 ul{
-  width: 100% !important;
+.header h1 {
+  display: inline-block;
+  margin: 0 -.7vw 0 0;
+
+  font-family: "butler-regular" !important;
+  color: rgba(255,255,255,0.98);
+  font-size: 8vw;
+  letter-spacing: .3vw;
+  font-stretch: condensed;
+}
+
+.gold-button {
+  position: absolute;
+  right: 5vw;
+  margin: 2vh;
+}
+
+.link-container {
+  margin-top: 2em;
+  margin-right: 2vw;
+}
+
+.trans-button {
+  padding: 0.8em 3em;
+  margin-right: 3vw;
 }

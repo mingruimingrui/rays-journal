@@ -29,7 +29,7 @@
   position: absolute;
   width: 20em;
   bottom: 0;
-  right: -16em;
+  right: -10em;
   display: inline;
   transform: rotate(-90deg);
   transform-origin: bottom left;
@@ -41,6 +41,7 @@
 .scroll-down {
   -webkit-animation: pulse 2s infinite;
   cursor: pointer;
+  font-stretch: ultra-condensed;
 }
 
 .header {

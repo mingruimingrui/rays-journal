@@ -26,11 +26,9 @@
 }
 
 .right-vert-bar {
-  position: absolute;
   width: 20em;
-  bottom: 0;
-  right: -10em;
   display: inline;
+  margin: 30em -20em 0 0;
   transform: rotate(-90deg);
   transform-origin: bottom left;
   color: rgb(252,219,148);
@@ -39,7 +37,7 @@
 }
 
 .scroll-down {
-  -webkit-animation: pulse 2s infinite;
+  /*-webkit-animation: pulse 2s infinite;*/
   cursor: pointer;
   font-stretch: ultra-condensed;
 }
@@ -85,10 +83,10 @@
 
 .link-container {
   margin-top: 2em;
-  margin-right: 2vw;
+  margin-right: 0vw;
 }
 
 .trans-button {
   padding: 0.8em 3em;
-  margin-right: 3vw;
+  margin-left: 3vw;
 }

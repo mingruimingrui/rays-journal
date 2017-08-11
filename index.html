@@ -88,7 +88,9 @@ window.onload = () => {
       duration: 700
     })
 
-  ).then(() => { // custom event animations here
+  ).then(() => { // load posts here
+    loadPost(1)
+  }).then(() => { // custom event animations here
     // left vert bar appear later
     fadeIn('.left-vert-bar', 500, 700);
 
@@ -99,6 +101,7 @@ window.onload = () => {
     // scroll down scrolls you down
     scrollToOnClick('.scroll-down', '.screen-container', 1000);
 
-  });
+  })
+
 }
 </script>

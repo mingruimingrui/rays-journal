@@ -60,13 +60,6 @@
   padding: 22vh 5vw 0 0;
 }
 
-.title {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  height: 30vh;
-}
-
 .header p {
   font-family: abel;
   font-size: 2vh;

@@ -28,7 +28,8 @@
 .right-vert-bar {
   width: 20em;
   display: inline;
-  margin: 30em -20em 0 0;
+  margin: 20em -20em 0 0;
+  padding-top: 10vh;
   transform: rotate(-90deg);
   transform-origin: bottom left;
   color: rgb(252,219,148);
@@ -49,7 +50,7 @@
   height: 100vh;
 }
 
-.header .title {
+.title-container {
   height: 100%;
   width: 100%;
   background-color: rgba(0,0,0,.5);
@@ -59,9 +60,16 @@
   padding: 22vh 5vw 0 0;
 }
 
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 30vh;
+}
+
 .header p {
   font-family: abel;
-  font-size: 1.1em;
+  font-size: 2vh;
 }
 
 .header h1 {
@@ -83,10 +91,13 @@
 
 .link-container {
   margin-top: 2em;
-  margin-right: 0vw;
 }
 
 .trans-button {
   padding: 0.8em 3em;
   margin-left: 3vw;
+}
+
+@@media (max-width: ) {
+
 }

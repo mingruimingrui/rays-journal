@@ -1,6 +1,6 @@
 body {
-  background-color: rgba(255,255,255,0.98);
-  overflow: hidden;
+  background-color: rgb(240,240,240);
+  /*overflow: hidden;*/
 }
 
 .screen-container {

@@ -26,30 +26,15 @@
 
 </head>
 <body>
-  <div class="left-vert-bar space-letter2">
-    <a href="https://github.com/mingruimingrui/">GITHUB</a>
-    <a href="#">MEDIUM</a>
-    <a href="https://www.linkedin.com/in/mingruimingrui/">LINKEDIN</a>
-  </div>
+  <div class="root">
+    <!-- root start -->
 
-  <!-- <div class="right-vert-bar">
-  <div class="gold-line left"></div>
-  <div class="scroll-down space-letter2">SCROLL DOWN</div>
-</div> -->
+    <div class="header">
 
-<div class="root">
-  <!-- root start -->
-  <div class="header">
-    <div data-aos="fade" data-aos-delay="300">
-      <a href="#" class="gold-button space-letter1">CONTACT</a>
-    </div>
-    <div class="title-container">
-      <p class="gold space-letter2" data-aos="fade" data-aos-delay="100">PERSONAL BLOG • ML • LIFE</p>
-      <h1>RAY'S</h1>
-      <h1>JOURNAL</h1>
-      <div class="link-container" data-aos="fade" data-aos-delay="300">
-        <a href="#" class="trans-button space-letter1">COMING SOON</a>
-        <a href="#" class="trans-button space-letter1">ABOUT</a>
+      <div class="left-vert-bar space-letter2">
+        <a href="https://github.com/mingruimingrui/">GITHUB</a>
+        <a href="#">MEDIUM</a>
+        <a href="https://www.linkedin.com/in/mingruimingrui/">LINKEDIN</a>
       </div>
 
       <div class="right-vert-bar">
@@ -57,37 +42,67 @@
         <div class="scroll-down space-letter2">SCROLL DOWN</div>
       </div>
 
-    </div>
-  </div>
+      <div data-aos="fade" data-aos-delay="300">
+        <a href="#" class="gold-button space-letter1">CONTACT</a>
+      </div>
 
-  <!-- <div class="screen-container float">
-</div> -->
-<!-- root end -->
-</div>
+      <div class="title-container">
+        <p class="gold space-letter2" data-aos="fade" data-aos-delay="100">PERSONAL BLOG • ML • LIFE</p>
+
+        <h1>RAY'S</h1>
+        <h1>JOURNAL</h1>
+
+        <div class="link-container" data-aos="fade" data-aos-delay="300" data-aos-offset="-1000">
+          <a href="#" class="trans-button space-letter1">COMING SOON</a>
+          <a href="#" class="trans-button space-letter1">ABOUT</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="screen-container">
+
+    </div>
+    <!-- root end -->
+  </div>
 </body>
 </html>
 
 <script type="text/javascript">
+// to be promised once online
 // $('.root').load('./assets/bodies/home.html');
-$('.left-vert-bar').css('opacity', 0);
-$('.right-vert-bar').css('opacity', 0);
+const DEVMODE = !!window.location.pathname.match('[A-Z]');
 
-Promise.all(
+const getPosts = () => {
+  if (DEVMODE) {
+    const reader = new FileReader();
+
+    reader.onload = function(e) {
+      var text = reader.result;
+      console.log(text);
+    };
+
+    reader.readAsText('./assets/posts/1.json')
+  }
+};
+
+Promise.all( // init animate on scroll library
   AOS.init({
     easing: 'ease',
     duration: 700
   })
-).then(() => {
-  setTimeout(() => {
-    $(".left-vert-bar").fadeTo(700, 1);
-  }, 300)
-}).then(() => {
-  setTimeout(() => {
-    $(".right-vert-bar").fadeTo(700, 1);
-  }, 700)
-})
 
-$(window).on('scroll', () => {
+).then(() => { // custom event animations here
+  // left vert bar appear later
+  fadeIn('.left-vert-bar', 500, 700);
+
+  // right vert bar appear later
+  fadeIn('.right-vert-bar', 700, 700);
+
+}).then(() => { // custom onclick animations here
+  // scroll down scrolls you down
+  scrollToOnClick('.scroll-down', '.screen-container', 1000);
 
 });
 </script>

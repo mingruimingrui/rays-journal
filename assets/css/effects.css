@@ -100,6 +100,7 @@
   -webkit-transition: all .5s;
   font-family: abel;
   font-weight: bold;
+  text-align: center;
 }
 
 .trans-button:hover {
@@ -110,9 +111,4 @@
 
 .soft-border {
   border-radius: 0px;
-}
-
-.gradient-wb {
-  background: linear-gradient(rgba(255,255,255,0.98), rgba(255,255,255,0.94));
-  height: 3px;
 }

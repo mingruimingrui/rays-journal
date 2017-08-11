@@ -74,18 +74,9 @@
 // $('.root').load('./assets/bodies/home.html');
 const DEVMODE = !!window.location.pathname.match('[A-Z]');
 
-const getPosts = () => {
-  if (DEVMODE) {
-    const reader = new FileReader();
-
-    reader.onload = function(e) {
-      var text = reader.result;
-      console.log(text);
-    };
-
-    reader.readAsText('./assets/posts/1.json')
-  }
-};
+$.getJSON('http://www.raysjournal.com/assets/posts/1.json', data => {
+  console.log(data);
+})
 
 Promise.all( // init animate on scroll library
   AOS.init({

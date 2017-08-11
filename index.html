@@ -13,16 +13,23 @@
   <link rel="stylesheet" href="./assets/css/bootstrap-theme.min.css"></link>
   <script src="./assets/js/bootstrap.min.js"></script>
 
-  <!-- other global styles/js -->
+  <!-- other global styles -->
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="./assets/css/effects.css">
-  <script src="./assets/js/common.js"></script>
-  <!-- <script src="./assets/js/rellax.min.js"></script> -->
   <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
+
+  <!-- other global js -->
+  <!-- <script src="./assets/js/rellax.min.js"></script> -->
+  <script src="./assets/js/common.js"></script>
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
   <!-- screen styles/js -->
   <link rel="stylesheet" href="./assets/css/home.css">
+
+  <!-- post functions -->
+  <script src="./assets/posts/.postGetter.js"></script>
+
+</script>
 
 </head>
 <body>
@@ -70,30 +77,28 @@
 </html>
 
 <script type="text/javascript">
-// to be promised once online
-// $('.root').load('./assets/bodies/home.html');
-const DEVMODE = !!window.location.pathname.match('[A-Z]');
+// const DEVMODE = !!window.location.pathname.match('[A-Z]');
 
-$.getJSON('http://www.raysjournal.com/assets/posts/2.json', data => {
-  console.log(data);
-})
+window.onload = () => {
+  // to be promised once online
+  // $('.root').load('./assets/bodies/home.html');
+  Promise.all( // init animate on scroll library
+    AOS.init({
+      easing: 'ease',
+      duration: 700
+    })
 
-Promise.all( // init animate on scroll library
-  AOS.init({
-    easing: 'ease',
-    duration: 700
-  })
+  ).then(() => { // custom event animations here
+    // left vert bar appear later
+    fadeIn('.left-vert-bar', 500, 700);
 
-).then(() => { // custom event animations here
-  // left vert bar appear later
-  fadeIn('.left-vert-bar', 500, 700);
+    // right vert bar appear later
+    fadeIn('.right-vert-bar', 700, 700);
 
-  // right vert bar appear later
-  fadeIn('.right-vert-bar', 700, 700);
+  }).then(() => { // custom onclick animations here
+    // scroll down scrolls you down
+    scrollToOnClick('.scroll-down', '.screen-container', 1000);
 
-}).then(() => { // custom onclick animations here
-  // scroll down scrolls you down
-  scrollToOnClick('.scroll-down', '.screen-container', 1000);
-
-});
+  });
+}
 </script>

@@ -1,5 +1,5 @@
-package.json
-node_modules
-env.sh
-
-.newPost.js
+_drafts/
+_site
+.sass-cache
+.DS_Store
+*.swp

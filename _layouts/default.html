@@ -1,19 +1,23 @@
 {% include header.html %}
 
-    {% include title-group.html %}
+{% include modal.html %}
 
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    {% for post in paginator.posts %}
-                        {% include tile.html %}
-                    {% endfor %}
+{% include welcome.html %}
 
-                    {% include pagination.html %}
-                </div>
-            </div>
-        </div>
-    </main>
+{% include title-group.html %}
+
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% for post in paginator.posts %}
+        {% include tile.html %}
+        {% endfor %}
+
+        {% include pagination.html %}
+      </div>
+    </div>
+  </div>
+</main>
 
 {% include footer.html %}

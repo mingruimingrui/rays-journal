@@ -12,8 +12,7 @@ $(function() {
 =            WINDOW IS LOADED            =
 ========================================*/
 $(window).load(function() {
-  $('.navbar').css('top', '-51px');
-  $('.welcome-container').css('height', $(window).height + 51 + 'px');
+
 });
 
 
@@ -21,7 +20,7 @@ $(window).load(function() {
 =            WINDOW IS RESIZED            =
 =========================================*/
 $(window).resize(function() {
-  $('.welcome-container').css('height', $(window).height + 51 + 'px');
+
 });
 
 
@@ -29,7 +28,7 @@ $(window).resize(function() {
 =            WINDOW IS SCROLLED            =
 ==========================================*/
 $(window).scroll(function() {
-  if ($(window).scrollTop() > $(window).height) {
+  if ($(window).scrollTop() > $(window).height()) {
     console.log('show nav')
   } else {
     console.log('hide nav')

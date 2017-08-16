@@ -1,14 +1,5 @@
 ---
 ---
-@import '../_sass/bootstrap';
-@import '../_sass/syntax-highlighting';
-
-
-$scotch-primary: rgb(255, 69, 69);
-$scotch-secondary: #FF7B7B;
-
-%oswald { font-family: 'Oswald', sans-serif; }
-%roboto { font-family: 'Roboto Condensed', sans-serif; }
 
 .welcome-container {
   height: calc(100vh + 51px);
@@ -19,9 +10,9 @@ $scotch-secondary: #FF7B7B;
 }
 
 .welcome-shade-container {
-  background-size: cover;
-  background-position: center;
-  background-image: url(../imgs/journal.jpg);
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
 }
 
 @media only screen and (max-width : 991px) {

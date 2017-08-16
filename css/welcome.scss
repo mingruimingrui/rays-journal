@@ -11,11 +11,8 @@ $scotch-secondary: #FF7B7B;
 %roboto { font-family: 'Roboto Condensed', sans-serif; }
 
 .welcome-container {
-  height: 100vh;
+  height: calc(100vh + 51px);
   width: 100vw;
-}
-
-.welcome-img-container {
   background-size: cover;
   background-position: center;
   background-image: url(../imgs/journal.jpg);

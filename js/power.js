@@ -29,5 +29,9 @@ $(window).resize(function() {
 =            WINDOW IS SCROLLED            =
 ==========================================*/
 $(window).scroll(function() {
-
+  if ($(window).scrollTop() > $(window).height) {
+    console.log('show nav')
+  } else {
+    console.log('hide nav')
+  }
 });

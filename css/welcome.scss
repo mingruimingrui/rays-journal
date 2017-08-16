@@ -6,6 +6,7 @@ nav.navbar {
 }
 
 .welcome-container {
+  margin-top: -51px;
   height: calc(100vh + 51px);
   width: 100vw;
   background-size: cover;
@@ -17,6 +18,35 @@ nav.navbar {
   height: 100%;
   width: 100%;
   background-color: rgba(0,0,0,0.5);
+}
+
+.left-vert-bar {
+  position: absolute;
+  width: 100vh;
+  height: 80px;
+  left: 80px;
+  bottom: 0;
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+  text-align: center;
+  line-height: 80px;
+}
+
+.left-vert-bar a {
+  margin: 0 1em;
+}
+
+.right-vert-bar {
+  width: 20em;
+  display: inline;
+  position: absolute;
+  right: 5vw;
+  bottom: 0;
+  margin-right: -20em;
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+  font-size: 0.7em;
+  text-align: center;
 }
 
 @media only screen and (max-width : 991px) {

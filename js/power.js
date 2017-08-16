@@ -12,7 +12,7 @@ $(function() {
 =            WINDOW IS LOADED            =
 ========================================*/
 $(window).load(function() {
-  $('.navbar').css('height', '-51px');
+  $('.navbar').css('top', '-51px');
   $('.welcome-container').css('height', $(window.height) + 51 + 'px');
 });
 

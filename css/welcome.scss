@@ -39,7 +39,7 @@ nav.navbar {
 
     a {
       margin: 0 1em;
-      font-size: 0.9em;
+      font-size: 0.8em;
       font-weight: lighter;
       letter-spacing: 0.1em;
     }
@@ -68,7 +68,6 @@ nav.navbar {
   }
 
   .gold-button {
-    font-size: 0.9em;
     color: $darkgrey;
     background-color: $gold;
     position: absolute;
@@ -109,7 +108,6 @@ nav.navbar {
 
       .trans-button {
         color: $white;
-        font-size: 0.9em;
         border: rgba(128,128,128,0.5) solid 1px;
         padding: 0.8em 3em;
         margin-left: 3vw;

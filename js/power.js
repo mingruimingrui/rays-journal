@@ -8,11 +8,12 @@ $(function() {
 
   // welcome page
   scrollToOnClick('.scroll-down', $(window).height() + 1, 1000);
-  fadeIn('.title-container p', 100, 600);
-  fadeIn('.gold-button', 300, 600);
-  fadeIn('.link-container', 300, 600);
-  fadeIn('.left-vert-bar', 500, 600);
-  fadeIn('.right-vert-bar', 700, 600);
+  console.log('dom ready');
+  // fadeIn('.title-container p', 100, 600);
+  // fadeIn('.gold-button', 300, 600);
+  // fadeIn('.link-container', 300, 600);
+  // fadeIn('.left-vert-bar', 500, 600);
+  // fadeIn('.right-vert-bar', 700, 600);
 });
 
 
@@ -20,7 +21,11 @@ $(function() {
 =            WINDOW IS LOADED            =
 ========================================*/
 $(window).load(function() {
-
+  fadeIn('.title-container p', 100, 600);
+  fadeIn('.gold-button', 300, 600);
+  fadeIn('.link-container', 300, 600);
+  fadeIn('.left-vert-bar', 500, 600);
+  fadeIn('.right-vert-bar', 700, 600);
 });
 
 

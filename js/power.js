@@ -8,12 +8,6 @@ $(function() {
 
   // welcome page
   scrollToOnClick('.scroll-down', $(window).height() + 1, 1000);
-  console.log('dom ready');
-  // fadeIn('.title-container p', 100, 600);
-  // fadeIn('.gold-button', 300, 600);
-  // fadeIn('.link-container', 300, 600);
-  // fadeIn('.left-vert-bar', 500, 600);
-  // fadeIn('.right-vert-bar', 700, 600);
 });
 
 
@@ -52,7 +46,7 @@ $(window).scroll(function() {
 =             HOMEMADE METHODS             =
 ==========================================*/
 const fadeIn = (targetName, start, duration) => {
-  $(targetName).css('opacity', 0);
+  $(targetName).fadeTo(0, 0);
   setTimeout(() => {
     $(targetName).fadeTo(duration, 1);
   }, start)

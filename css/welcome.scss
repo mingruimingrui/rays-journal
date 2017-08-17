@@ -1,3 +1,5 @@
+---
+---
 $scotch-primary: rgb(255, 69, 69);
 $grey: rgb(176,176,182);
 $gold: rgb(252,219,148);
@@ -13,12 +15,12 @@ nav.navbar {
   background-size: cover;
   background-position: center;
   background-image: url(../imgs/journal.jpg);
-}
 
-.welcome-shade-container {
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0,0,0,0.5);
+  .welcome-shade-container {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
 }
 
 .left-vert-bar {
@@ -31,12 +33,11 @@ nav.navbar {
   transform-origin: bottom left;
   text-align: center;
   line-height: 80px;
-}
 
-.left-vert-bar a {
-  margin: 0 1em;
-  font-weight: lighter;
-
+  a {
+    margin: 0 1em;
+    font-weight: lighter;
+  }
 }
 
 .right-vert-bar {
@@ -49,12 +50,12 @@ nav.navbar {
   transform-origin: bottom left;
   color: $gold;
   font-size: 0.7em;
-}
 
-.right-vert-bar.gold-line {
-  height: 1px;
-  width: calc(5em + 51px);
-  background-color: $gold;
+  .gold-line {
+    height: 1px;
+    width: calc(5em + 51px);
+    background-color: $gold;
+  }
 }
 
 @media only screen and (max-width : 991px) {

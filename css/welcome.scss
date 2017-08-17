@@ -78,6 +78,10 @@ nav.navbar {
       background-color: $gold;
       margin-right: 1em;
     }
+
+    .chevron-down {
+      visibility: hidden;
+    }
   }
 
   .gold-button {
@@ -166,5 +170,38 @@ nav.navbar {
     bottom: 80px !important;
     width: 100% !important;
     text-align: center;
+    display: inherit !important;
+
+    .gold-line {
+      visibility: hidden !important;
+    }
+
+    .chevron-down {
+      visibility: visible !important;
+    }
+
+    .scroll-down {
+      -webkit-animation: none !important;
+      z-index: inherit !important;
+    }
+  }
+
+  .gold-button {
+    visibility: hidden !important;
+  }
+
+  .title-container {
+    p {
+      font-size: 1em !important;
+    }
+
+    h1 {
+      font-size: 16vw !important;
+    }
+
+    .link-container {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

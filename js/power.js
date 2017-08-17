@@ -31,9 +31,9 @@ $(window).resize(function() {
 ==========================================*/
 $(window).scroll(function() {
   if ($(window).scrollTop() > $(window).height()) {
-    $('nav.navbar').css('top', '-51px');
-  } else {
     $('nav.navbar').css('top', 0);
+  } else {
+    $('nav.navbar').css('top', '-51px');
   };
 });
 

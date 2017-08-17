@@ -64,10 +64,12 @@ nav.navbar {
   }
 
   .gold-button {
-    color: rgb(70,70,70);
-    background-color: rgb(252,219,148);
+    color: $darkgrey;
+    background-color: $gold;
     padding: 0.5em 1.5em;
-    font-weight: bold;
+    font-weight: ;
+
+
   }
 
 }

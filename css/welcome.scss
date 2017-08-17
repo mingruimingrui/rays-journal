@@ -55,6 +55,7 @@ nav.navbar {
 
   .right-vert-bar {
     position: absolute;
+    height: 1em;
     width: 20em;
     right: $right-margin;
     bottom: -51px;
@@ -67,6 +68,7 @@ nav.navbar {
     letter-spacing: 0.2em;
     display: flex;
     align-items: center;
+    cursor: pointer;
 
     .gold-line {
       height: 1px;

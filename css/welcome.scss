@@ -6,13 +6,14 @@ $white: rgb(240,240,240);
 $grey: rgb(176,176,182);
 $gold: rgb(252,219,148);
 $darkgrey: rgb(70,70,70);
-$right-margin: 5vw;
+$right-margin: 7vw;
 
 nav.navbar {
   top: -51px;
 }
 
 .welcome-container {
+  overflow: hidden;
   margin-top: -51px;
   height: calc(100vh + 51px);
   width: 100vw;
@@ -110,7 +111,7 @@ nav.navbar {
     }
 
     .link-container {
-      margin-top: 2em;
+      margin-top: 1.5em;
 
       .trans-button {
         font-family: 'abel';

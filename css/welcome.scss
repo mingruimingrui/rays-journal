@@ -40,6 +40,7 @@ nav.navbar {
     a {
       margin: 0 1em;
       font-weight: lighter;
+      letter-spacing: 0.1em;
     }
   }
 
@@ -53,6 +54,7 @@ nav.navbar {
     transform-origin: bottom left;
     color: $gold;
     font-size: 0.7em;
+    letter-spacing: 0.1em;
     display: flex;
     align-items: center;
 
@@ -67,10 +69,12 @@ nav.navbar {
   .gold-button {
     color: $darkgrey;
     background-color: $gold;
-    padding: 0.5em 1.5em;
+    position: absolute;
+    right: 5vw;
+    top: 2vw;
 
     &:hover {
-      background-color: rgb(240,240,240);
+      background-color: $white;
     }
   }
 
@@ -83,22 +87,31 @@ nav.navbar {
     align-items: flex-end;
 
     p {
-      font-size: 2vh;
+      color: $gold;
+      letter-spacing: 0.1em;
+      margin-bottom: 10px;
     }
 
     h1 {
       display: inline-block;
       margin: 0 -.7vw 0 0;
-      color: rgb(240,240,240);
+      color: $white;
       font-size: 8vw;
-      // letter-spacing: .3vw;
+      font-family: 'Rufina';
+      letter-spacing: .3vw;
     }
 
     .link-container {
       margin-top: 2em;
 
       .trans-button {
-        
+        color: $white;
+        border: rgba(128,128,128,0.5) solid 1px;
+
+        &:hover {
+          background-color: $gold;
+          color: $darkgrey;
+        }
       }
     }
   }

@@ -149,5 +149,21 @@ nav.navbar {
 }
 
 @media only screen and (max-width : 480px) {
+  .left-vert-bar {
+    transform: none;
+    left: 0;
+    top: 0;
 
+    a {
+      font-size: 1em;
+    }
+  }
+
+  .right-vert-bar {
+    transform: none;
+    left: 0;
+    bottom: 80px;
+    width: 100%;
+    text-align: center;
+  }
 }

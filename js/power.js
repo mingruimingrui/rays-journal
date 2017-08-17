@@ -38,11 +38,19 @@ $(window).resize(function() {
 =            WINDOW IS SCROLLED            =
 ==========================================*/
 $(window).scroll(function() {
-  if ($(window).scrollTop() > $(window).height()) {
-    $('nav.navbar').css('top', 0);
+  if ($(window).width() > 480) {
+    if ($(window).scrollTop() > $(window).height()) {
+      $('nav.navbar').css('top', 0);
+    } else {
+      $('nav.navbar').css('top', '-51px');
+    };
   } else {
-    $('nav.navbar').css('top', '-51px');
-  };
+    if ($(window).scrollTop() > $(window).height()) {
+      $('nav.navbar').css('top', 0);
+    } else {
+      $('nav.navbar').css('top', 0);
+    };
+  }
 });
 
 /*==========================================

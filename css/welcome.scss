@@ -8,8 +8,8 @@ $darkgrey: rgb(70,70,70);
 $right-margin: 5vw;
 
 @font-face {
-    font-family: 'Butler Regular';
-    src: url("../fonts/Butler_Regular.otf") format("opentype");
+  font-family: 'Butler Regular';
+  src: url("../fonts/Butler_Regular.otf") format("opentype");
 }
 
 nav.navbar {
@@ -30,7 +30,6 @@ nav.navbar {
     width: 100%;
     background-color: rgba(0,0,0,0.5);
   }
-
 
   .left-vert-bar {
     opacity: 0;
@@ -189,7 +188,7 @@ nav.navbar {
   }
 
   .title-container {
-    padding-top: 100px;
+    padding-top: 100px !important;
 
     p {
       opacity: 1 !important;

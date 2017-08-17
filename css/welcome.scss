@@ -92,7 +92,7 @@ nav.navbar {
       margin-bottom: 10px;
     }
 
-    h1 {
+    .title-container h1 {
       display: inline-block;
       margin: 0 -.7vw 0 0;
       color: $white;
@@ -114,6 +114,7 @@ nav.navbar {
         }
       }
     }
+
   }
 
 }

@@ -3,6 +3,8 @@
 $scotch-primary: rgb(255, 69, 69);
 $grey: rgb(176,176,182);
 $gold: rgb(252,219,148);
+$darkgrey: rgb(70,70,70);
+$right-margin: 5vw;
 
 nav.navbar {
   top: -51px;
@@ -21,41 +23,53 @@ nav.navbar {
     width: 100%;
     background-color: rgba(0,0,0,0.5);
   }
-}
 
-.left-vert-bar {
-  position: absolute;
-  width: 100vh;
-  height: 80px;
-  left: 80px;
-  bottom: 0;
-  transform: rotate(-90deg);
-  transform-origin: bottom left;
-  text-align: center;
-  line-height: 80px;
 
-  a {
-    margin: 0 1em;
-    font-weight: lighter;
+  .left-vert-bar {
+    position: absolute;
+    width: 100vh;
+    height: 80px;
+    left: 80px;
+    bottom: 0;
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+    text-align: center;
+    line-height: 80px;
+
+    a {
+      margin: 0 1em;
+      font-weight: lighter;
+    }
   }
-}
 
-.right-vert-bar {
-  position: absolute;
-  width: 20em;
-  right: 5vw;
-  bottom: -51px;
-  margin-right: -20em;
-  transform: rotate(-90deg);
-  transform-origin: bottom left;
-  color: $gold;
-  font-size: 0.7em;
+  .right-vert-bar {
+    position: absolute;
+    width: 20em;
+    right: $right-margin;
+    bottom: -51px;
+    margin-right: -20em;
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+    color: $gold;
+    font-size: 0.7em;
+    display: flex;
+    align-items: center;
 
-  .gold-line {
-    height: 1px;
-    width: calc(5em + 51px);
-    background-color: $gold;
+    .gold-line {
+      height: 1px;
+      width: calc(5em + 51px);
+      background-color: $gold;
+      margin-right: 1em;
+    }
   }
+
+  .gold-button {
+    color: rgb(70,70,70);
+    background-color: rgb(252,219,148);
+    padding: 0.5em 1.5em;
+    font-weight: bold;
+  }
+
 }
 
 @media only screen and (max-width : 991px) {

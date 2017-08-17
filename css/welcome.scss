@@ -39,6 +39,7 @@ nav.navbar {
 
     a {
       margin: 0 1em;
+      font-size: 0.9em;
       font-weight: lighter;
       letter-spacing: 0.1em;
     }
@@ -67,6 +68,7 @@ nav.navbar {
   }
 
   .gold-button {
+    font-size: 0.9em;
     color: $darkgrey;
     background-color: $gold;
     position: absolute;
@@ -88,6 +90,7 @@ nav.navbar {
 
     p {
       color: $gold;
+      font-weight: lighter;
       letter-spacing: 0.1em;
       margin-bottom: 10px;
     }
@@ -96,7 +99,7 @@ nav.navbar {
       display: inline-block;
       margin: 0 -.7vw 0 0;
       color: $white;
-      font-size: 8vw;
+      font-size: 7vw;
       font-family: 'Rufina';
       letter-spacing: .3vw;
     }
@@ -106,12 +109,16 @@ nav.navbar {
 
       .trans-button {
         color: $white;
+        font-size: 0.9em;
         border: rgba(128,128,128,0.5) solid 1px;
+        padding: 0.8em 3em;
+        margin-left: 3vw;
+        margin-bottom: 2em;
 
-        // &:hover {
-        //   background-color: $gold;
-        //   color: $darkgrey;
-        // }
+        &:hover {
+          background-color: $gold;
+          color: $darkgrey;
+        }
       }
     }
 

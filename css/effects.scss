@@ -2,38 +2,20 @@
 ---
 @keyframes pulse {
   0% {
-    // -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-  50% {
-    // -webkit-transform: translate(-5px, 0);
-    transform: translate(-5px, 0);
-  }
-  100% {
-    // -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes pulse2 {
-  0% {
     -webkit-transform: translate(0, 0);
-    // transform: translate(0, 0);
+    transform: translate(0, 0);
   }
   50% {
     -webkit-transform: translate(-5px, 0);
-    // transform: translate(-5px, 0);
+    transform: translate(-5px, 0);
   }
   100% {
     -webkit-transform: translate(0, 0);
-    // transform: translate(0, 0);
+    transform: translate(0, 0);
   }
 }
 
 .pulse {
   -webkit-animation: pulse 2s infinite;
-}
-
-.pulse2 {
-  -webkit-animation: pulse2 2s infinite;
+  z-index: -1;
 }

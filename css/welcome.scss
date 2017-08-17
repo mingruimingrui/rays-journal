@@ -1,5 +1,6 @@
----
----
+$scotch-primary: rgb(255, 69, 69);
+$grey: rgb(176,176,182);
+$gold: rgb(252,219,148);
 
 nav.navbar {
   top: -51px;
@@ -34,19 +35,26 @@ nav.navbar {
 
 .left-vert-bar a {
   margin: 0 1em;
+  font-weight: lighter;
+
 }
 
 .right-vert-bar {
-  width: 20em;
-  display: inline;
   position: absolute;
+  width: 20em;
   right: 5vw;
-  bottom: 0;
+  bottom: -51px;
   margin-right: -20em;
   transform: rotate(-90deg);
   transform-origin: bottom left;
+  color: $gold;
   font-size: 0.7em;
-  text-align: center;
+}
+
+.right-vert-bar.gold-line {
+  height: 1px;
+  width: calc(5em + 51px);
+  background-color: $gold;
 }
 
 @media only screen and (max-width : 991px) {

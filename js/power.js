@@ -37,25 +37,13 @@ $(window).resize(function() {
 /*==========================================
 =            WINDOW IS SCROLLED            =
 ==========================================*/
-if ($(window).width() > 480) {
-  $(window).scroll(function() {
-    if ($(window).scrollTop() > $(window).height()) {
-      $('nav.navbar').css('top', 0);
-    } else {
-      $('nav.navbar').css('top', '-51px');
-    };
-
-  });
-} else {
-  $(window).scroll(function() {
-    if ($(window).scrollTop() > $(window).height()) {
-      // $('nav.navbar').css('background-color', );
-    } else {
-      // $('nav.navbar').css('top', '-51px');
-    };
-
-  });
-}
+$(window).scroll(function() {
+  if ($(window).scrollTop() > $(window).height()) {
+    $('nav.navbar').css('top', 0);
+  } else {
+    $('nav.navbar').css('top', '-51px');
+  };
+});
 
 /*==========================================
 =             HOMEMADE METHODS             =

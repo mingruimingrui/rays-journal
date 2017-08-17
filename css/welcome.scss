@@ -157,10 +157,12 @@ nav.navbar {
   }
 
   .left-vert-bar {
+    opacity: 1 !important;
     left: 0 !important;
   }
 
   .right-vert-bar {
+    opacity: 1 !important;
     transform: none !important;
     left: 0 !important;
     bottom: 80px !important;
@@ -187,7 +189,10 @@ nav.navbar {
   }
 
   .title-container {
+    padding-top: 100px;
+
     p {
+      opacity: 1 !important;
       font-size: 1em !important;
     }
 
@@ -196,6 +201,7 @@ nav.navbar {
     }
 
     .link-container {
+      opacity: 1 !important;
       display: flex;
       flex-direction: column;
     }

@@ -1,5 +1,6 @@
 ---
 ---
+
 $scotch-primary: rgb(255, 69, 69);
 $white: rgb(240,240,240);
 $grey: rgb(176,176,182);
@@ -39,9 +40,10 @@ nav.navbar {
 
     a {
       margin: 0 1em;
+      font-family: 'abel';
       font-size: 0.8em;
       font-weight: lighter;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.2em;
     }
   }
 
@@ -54,8 +56,9 @@ nav.navbar {
     transform: rotate(-90deg);
     transform-origin: bottom left;
     color: $gold;
-    font-size: 0.7em;
-    letter-spacing: 0.1em;
+    font-family: 'abel';
+    font-size: 0.6em;
+    letter-spacing: 0.2em;
     display: flex;
     align-items: center;
 
@@ -68,6 +71,7 @@ nav.navbar {
   }
 
   .gold-button {
+    font-family: 'abel';
     color: $darkgrey;
     background-color: $gold;
     position: absolute;
@@ -88,9 +92,10 @@ nav.navbar {
     align-items: flex-end;
 
     p {
+      font-family: 'abel';
       color: $gold;
       font-weight: lighter;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.2em;
       margin-bottom: 10px;
     }
 
@@ -107,6 +112,7 @@ nav.navbar {
       margin-top: 2em;
 
       .trans-button {
+        font-family: 'abel';
         color: $white;
         border: rgba(128,128,128,0.5) solid 1px;
         padding: 0.8em 3em;

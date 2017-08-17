@@ -1,6 +1,7 @@
 ---
 ---
 $scotch-primary: rgb(255, 69, 69);
+$white: rgb(240,240,240);
 $grey: rgb(176,176,182);
 $gold: rgb(252,219,148);
 $darkgrey: rgb(70,70,70);
@@ -67,9 +68,39 @@ nav.navbar {
     color: $darkgrey;
     background-color: $gold;
     padding: 0.5em 1.5em;
-    font-weight: ;
 
+    &:hover {
+      background-color: rgb(240,240,240);
+    }
+  }
 
+  .title-container {
+    height: 100%;
+    width: 100%;
+    padding: 22vh 5vw 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    p {
+      font-size: 2vh;
+    }
+
+    h1 {
+      display: inline-block;
+      margin: 0 -.7vw 0 0;
+      color: rgb(240,240,240);
+      font-size: 8vw;
+      // letter-spacing: .3vw;
+    }
+
+    .link-container {
+      margin-top: 2em;
+
+      .trans-button {
+        
+      }
+    }
   }
 
 }

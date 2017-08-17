@@ -6,7 +6,7 @@ $(function() {
     return false;
   });
 
-  scrollToOnClick('.scroll-down', $(window).height(), 1000);
+  scrollToOnClick('.scroll-down', $(window).height() + 1, 1000);
 });
 
 

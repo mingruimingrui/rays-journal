@@ -5,8 +5,10 @@
 
 
 $scotch-primary: rgb(255, 69, 69);
+$white: rgb(240,240,240);
 $grey: rgb(176,176,182);
 $gold: rgb(252,219,148);
+$darkgrey: rgb(70,70,70);
 
 %oswald { font-family: 'Oswald', sans-serif; }
 %roboto { font-family: 'Roboto Condensed', sans-serif; }
@@ -45,7 +47,7 @@ h1, h2, h3, h4, h5, h6 { @extend %oswald; }
 }
 nav.navbar {
   margin: 0;
-  -webkit-transition: all .5s;
+  -webkit-transition: all .225s;
 
   a {
     text-transform: uppercase;

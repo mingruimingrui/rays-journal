@@ -92,7 +92,7 @@ nav.navbar {
       margin-bottom: 10px;
     }
 
-    .title-container h1 {
+    h1 {
       display: inline-block;
       margin: 0 -.7vw 0 0;
       color: $white;
@@ -108,10 +108,10 @@ nav.navbar {
         color: $white;
         border: rgba(128,128,128,0.5) solid 1px;
 
-        &:hover {
-          background-color: $gold;
-          color: $darkgrey;
-        }
+        // &:hover {
+        //   background-color: $gold;
+        //   color: $darkgrey;
+        // }
       }
     }
 

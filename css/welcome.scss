@@ -8,6 +8,11 @@ $gold: rgb(252,219,148);
 $darkgrey: rgb(70,70,70);
 $right-margin: 5vw;
 
+@font-face {
+    font-family: 'Butler Regular';
+    src: url("../fonts/Butler_Regular.otf") format("opentype");
+}
+
 nav.navbar {
   top: -51px;
 }
@@ -106,7 +111,7 @@ nav.navbar {
       margin: 0 -.7vw 0 0;
       color: $white;
       font-size: 8vw;
-      font-family: 'Rufina';
+      font-family: 'Butler Regular';
       letter-spacing: .3vw;
     }
 

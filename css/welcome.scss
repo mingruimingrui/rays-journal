@@ -76,7 +76,7 @@ nav.navbar {
       height: 1px;
       width: calc(5em + 51px);
       background-color: $gold;
-      margin-right: 2em;
+      margin-right: 1em;
     }
   }
 
@@ -150,20 +150,21 @@ nav.navbar {
 
 @media only screen and (max-width : 480px) {
   .left-vert-bar {
-    transform: none;
-    left: 0;
-    top: 0;
+    transform: none !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
 
     a {
-      font-size: 1em;
+      font-size: 1em !important;
     }
   }
 
   .right-vert-bar {
-    transform: none;
-    left: 0;
-    bottom: 80px;
-    width: 100%;
+    transform: none !important;
+    left: 0 !important;
+    bottom: 80px !important;
+    width: 100% !important;
     text-align: center;
   }
 }

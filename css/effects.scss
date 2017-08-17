@@ -13,11 +13,13 @@
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
   }
+
 }
 
 .pulse {
   -webkit-animation: pulse 2s infinite;
   z-index: -1;
+
 }
 
 .chevron-down {
@@ -32,4 +34,5 @@
   transform: rotate(135deg);
   vertical-align: top;
   width: 0.8em;
+  
 }

@@ -2,16 +2,18 @@
 
 {% include modal.html %}
 
-{% include welcome.html %}
-
-<!-- {% include title-group.html %} -->
+{% if paginator.page == 1 %}
+  {% include welcome.html %}
+{% else %}
+  {% include title-group.html %}
+{% endif %}
 
 <main>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         {% for post in paginator.posts %}
-        {% include tile.html %}
+          {% include tile.html %}
         {% endfor %}
 
         {% include pagination.html %}

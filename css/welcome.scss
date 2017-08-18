@@ -19,6 +19,7 @@ nav.navbar {
 .welcome-container {
   overflow: hidden;
   margin-top: -51px;
+  margin-bottom: 80px;
   height: calc(100vh + 51px);
   width: 100%;
   background-size: cover;
@@ -164,7 +165,8 @@ nav.navbar {
     opacity: 1 !important;
     transform: none !important;
     left: 0 !important;
-    bottom: 80px !important;
+    bottom: 50px !important;
+    height: auto !important;
     width: 100% !important;
     text-align: center;
     display: inherit !important;
@@ -188,7 +190,7 @@ nav.navbar {
   }
 
   .title-container {
-    padding-top: 100px !important;
+    padding-top: 80px !important;
 
     p {
       opacity: 1 !important;

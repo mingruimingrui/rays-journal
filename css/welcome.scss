@@ -7,10 +7,7 @@ $gold: rgb(252,219,148);
 $darkgrey: rgb(70,70,70);
 $right-margin: 5vw;
 
-@font-face {
-  font-family: 'Butler Regular';
-  src: url("../fonts/Butler_Regular.otf") format("opentype");
-}
+%butler { font-family: 'Butler Regular'; }
 
 nav.navbar {
   top: -51px;
@@ -78,7 +75,8 @@ nav.navbar {
       margin-right: 1em;
     }
 
-    .chevron-down {
+    .fa {
+      font-size: 1.5em;
       visibility: hidden;
     }
   }
@@ -120,7 +118,7 @@ nav.navbar {
       margin: 0 -.7vw 0 0;
       color: $white;
       font-size: 8vw;
-      font-family: 'Butler Regular';
+      @extend %butler;
       letter-spacing: .3vw;
     }
 

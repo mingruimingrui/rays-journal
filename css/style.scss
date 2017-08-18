@@ -3,6 +3,11 @@
 @import '../_sass/bootstrap';
 @import '../_sass/syntax-highlighting';
 
+@font-face {
+  font-family: 'Butler Regular';
+  src: url("../fonts/Butler_Regular.otf") format("opentype");
+}
+
 $scotch-primary: rgb(255, 69, 69);
 $white: rgb(240,240,240);
 $grey: rgb(176,176,182);
@@ -11,7 +16,6 @@ $darkgrey: rgb(70,70,70);
 
 %oswald { font-family: 'Oswald', sans-serif; }
 %roboto { font-family: 'Roboto Condensed', sans-serif; }
-
 
 body {
   @extend %roboto;

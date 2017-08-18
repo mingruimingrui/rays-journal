@@ -48,7 +48,7 @@ $(window).scroll(function() {
     if ($(window).scrollTop() > $(window).height()) {
       $('nav.navbar').css('top', 0);
     } else {
-      $('nav.navbar').css('top', 0);
+      $('nav.navbar').css('top', '-51px');
     };
   }
 });

@@ -45,9 +45,7 @@ $(window).resize(function() {
 =            WINDOW IS SCROLLED            =
 ==========================================*/
 $(window).scroll(function() {
-  console.log('hello there')
   if (window.location.pathname === '/') {
-    console.log('hello again')
     if ($(window).width() > 480) {
       if ($(window).scrollTop() > $(window).height()) {
         $('nav.navbar').css('top', 0);

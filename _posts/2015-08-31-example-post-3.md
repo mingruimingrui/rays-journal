@@ -1,6 +1,6 @@
 ---
 layout: inner
-title: 'My First Post on Jekyll'
+title: 'My First Post on Jekyll 3'
 date: 2015-08-31 13:26:34
 categories: blog development
 tags: cats dogs code

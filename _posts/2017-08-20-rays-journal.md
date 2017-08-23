@@ -1,11 +1,11 @@
 ---
 layout: inner
-title: 'Rays Journal'
+title: "Ray's Journal"
 date: 2017-08-22 12:33:25
 categories: blog
 tags: personal philosophy
 featured_image: 'http://placekitten.com/1500/1000'
-lead_text: "A part of my life story."
+lead_text: 'A part of my life story.'
 ---
 
 Looking back to the last nine months of my life, I couldn't help but feel amazed by the amount of changes that's happened.

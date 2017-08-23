@@ -1,13 +1,17 @@
 ---
 layout: inner
-title: "Learning Machine learning, starting form the hardest bit."
+title: "Ray's Journal"
 date: 2017-08-22 12:33:25
-categories: 'machine learning' 'tech'
-tags: 'computer vision' 'guide'
+categories: 'blog'
+tags: 'personal' 'philosophy'
 featured_image: 'http://placekitten.com/1500/1000'
-lead_text: "Some way that learning Machine learning is hard, it is."
+lead_text: "A part of my life story."
 ---
 
-If anyone tells you that machine learning is easy, don't believe them. People who say that probably belong to the world's top 10% mathematical talent. No one would EVER be in their right mind to spend their free time learning something as difficult as machine learning so thank you for not being in your right mind and coming to this site to read this article. I take the fact that you are reading this that you are willing to spend the next 1-2 hours of your life reading and re-reading paragraphs to understand what's going on. So here we go, ML - the hard way.
+Looking back to the last nine months of my life, I couldn't help but feel amazed by the amount of changes that's happened.
 
-<div>THIS IS A DIV</div>
+Just 9 months prior, you would probably consider me your typical college loser. I was the kind who isn't particularly good at anything and plays video games all day. It wasn't that I don't wish to breakout of that cycle but it was more like I didn't know how to. There was no close person for me to talk to, I did not have any interests or hobbies and (you know) society also sort of don't want to associate itself with the sort of person I was. I had people who I can call friends but I felt absolutely alone. It was only recently that I realized that what I truly needed was a close intimate relationship which I did not have during those days.
+
+
+
+Thank you all for making my life it is today

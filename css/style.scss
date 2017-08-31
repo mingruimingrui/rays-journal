@@ -51,6 +51,8 @@ h1, h2, h3, h4, h5, h6 { @extend %oswald; }
 nav.navbar {
   margin: 0;
   -webkit-transition: all .225s;
+  background-color: rgb(50,50,50);
+  border: none;
 
   a {
     text-transform: uppercase;

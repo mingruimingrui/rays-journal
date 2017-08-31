@@ -7,6 +7,8 @@ tags: personal philosophy
 lead_text: ''
 ---
 
-Once you set out to do something, even if you don't achieve your original goal, you would still arrive at something else. It's never about actually reaching that destination you sought (reaching it would be a really big bonus) but trying new things out and allowing your experiences to take you to somewhere completely new.
+The key inspiration to begin writing this blog is the massive changes that's happened over the past 9 months of my life. It's said that life
 
 <div style="visibility: hidden">In every single day of your life, do something that you want to do and scares you.</div>
+
+{% include title-group.html %}

@@ -2,7 +2,7 @@
 layout: inner
 title: 'My First Post on Jekyll'
 date: 2015-08-31 13:26:34
-categories: blog development
+reading_duration: 5
 tags: cats dogs code
 featured_image: 'http://placekitten.com/1500/1000'
 image_opacity: 0.4

@@ -18,11 +18,11 @@
       </h1>
       {% if page.id %}
       <aside>
-        {{ page.date | date: "%m.%d.%y" }}
-        {% if page.categories != empty %}
+        {{ page.date | date: "%B %d, %Y" }}
+        {% if page.tags != empty %}
         &nbsp;
-        {% for category in page.categories %}
-        | <span>{{ category }}</span>
+        {% for tag in page.tags %}
+        | <span>{{ tag }}</span>
         {% endfor %}
         {% endif %}
       </aside>

@@ -2,23 +2,12 @@
 ---
 @import '../_sass/bootstrap';
 @import '../_sass/syntax-highlighting';
+@import 'title-group';
+@import 'tile';
 
-
-$scotch-primary: rgb(255, 69, 69);
-$scotch-secondary: #FF7B7B;
 
 %oswald { font-family: 'Oswald', sans-serif; }
 %roboto { font-family: 'Roboto Condensed', sans-serif; }
-
-
-@-webkit-keyframes pulse {
-  0% {
-    bottom: 0;
-  }
-  100% {
-    bottom: -3px;
-  }
-}
 
 
 body {
@@ -29,6 +18,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 p {
+  color: #777;
   font-size: 15px;
   margin-bottom: 30px;
 }
@@ -37,7 +27,7 @@ a {
   outline: none !important;
   text-decoration: none !important;
   transition: all 225ms ease;
-  color: $scotch-secondary;
+  color: rgb(255, 69, 69);
 
   &:hover { color: #6165FF; }
 }
@@ -52,262 +42,30 @@ h1, h2, h3, h4, h5, h6 { @extend %oswald; }
   color: #fff;
 }
 
-nav.navbar {
-  margin: 0;
 
-  a {
-    text-transform: uppercase;
-    font-size: 16px;
-  }
-
-  .navbar-brand {
-    text-transform: none;
-
-    i {
-      transition: inherit;
-      color: $scotch-primary;
-      transform: scale(1);
-    }
-
-    &:hover i {
-      color: rgb(255, 111, 111);
-      transform: scale(1.35);
-    }
-  }
-}
-
-.topper {
-  margin-bottom: 50px;
-
-  .img {
-    position: relative;
-    top: 0;
-    left: 0;
-    min-height: 300px;
-    height: 75vh;
-    width: 100%;
-    display: block;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50%;
-  }
-
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
-
-  .title-group1 {
-    text-align: center;
-    position: absolute;
-    height: 100%;
-    width: 70%;
-    margin: 0 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-
-    h1.special {
-      margin: 0;
-      font-size: 75px;
-      font-weight: 700;
-    }
-
-    aside {
-      color: white;
-    }
-
-    p {
-      margin-top: 9px;
-      font-size: 18px;
-    }
-  }
-
-  .scroll-down {
-    position: absolute;
-    margin: auto;
-    text-align: center;
-    width: 30px;
-    bottom: 0;
-    left: calc(50% - 15px);
-    font-size: 1.5em;
-    color: white;
-    transition-duration: 0.5s;
-
-    &:hover {
-      bottom: -5px;
-      color: lightgrey;
-      cursor: pointer;
-    }
-  }
-
-  .title-group2 {
-    text-align: center;
-    padding: 50px 15px;
-    // margin: 50px 0;
-
-    p {
-      max-width: 800px;
-      margin: 25px auto 0;
-    }
-
-    h1.special {
-      position: relative;
-      text-align: center;
-      overflow: hidden;
-      margin: 0;
-      text-transform: uppercase;
-      @extend %oswald;
-      font-size: 50px;
-      line-height: 50px;
-      font-weight: 700;
-      color: $scotch-primary;
-
-      span {
-        display: inline-block;
-        position: relative;
-        padding: 0 15px;
-        max-width: 1000px;
-
-        &:before, &:after {
-          content: '';
-          position: absolute;
-          display: block;
-          height: 1px;
-          background: #e8e8e8;
-          width: 99999999px;
-          top: 50%;
-          transform: translateY(-50%);
-        }
-
-        &:before { left: 100%; }
-        &:after { right: 100%; }
-      }
-    }
-  }
-}
-
-
-.tile {
-  position: relative;
-  box-shadow: 0 0.15em 0.35em 0 rgba(0, 0, 0, 0.135);
-  margin-bottom: 125px;
-
-  .inner-guts { padding: 50px; }
-
-  h2 {
-    margin: 0;
-    font-size: 100px;
-    font-weight: 400;
-    letter-spacing: -0.05em;
-    line-height: 100px;
-  }
-
-  .featurette {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin-bottom: 15px;
-    width: 100%;
-    height: 550px;
-    background-color: #e8e8e8;
-
-    .img {
-      background-size: cover;
-      background-position: 50% 0;
-      background-repeat: no-repeat;
-      position: absolute;
-      display: block;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      transition: all 225ms ease;
-      transform: scale(1);
-
-      &:before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: block;
-        content: '';
-        background: #000;
-        opacity: 0.4;
-        transition: all 225ms ease;
-      }
-    }
-
-    iframe {
-      position: absolute;
-      display: block;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    &:hover {
-      .img {
-        transform: scale(1.2);
-
-        &:before {
-          opacity: 0.2;
-        }
-      }
-    }
-  }
-
-  .excerpt {
-    font-size: 35px;
-    font-weight: 300;
-    line-height: 49px;
-    color: #484848;
-
-    p {
-      margin: 0;
-    }
-  }
-
-  .tags {
-    position: absolute;
-    left: 0;
-    top: 100%;
-    margin-top: 15px;
-
-    span {
-      padding: 1px 5px;
-      font-size: 12px;
-      line-height: 1.5;
-      text-transform: uppercase;
-      @extend %oswald;
-    }
-  }
-
-  .read-more {
-    margin-top: 50px;
-    width: 100%;
-    max-width: 175px;
-    position: relative;
-    padding-right: 75px;
-
-    i {
-      position: absolute;
-      right: 15px;
-      top: 50%;
-      transform: translateY(-54%);
-      font-size: 31px;
-      line-height: 100%;
-    }
-  }
-}
+// nav.navbar {
+//   margin: 0;
+//
+//   a {
+//     text-transform: uppercase;
+//     font-size: 16px;
+//   }
+//
+//   .navbar-brand {
+//     text-transform: none;
+//
+//     i {
+//       transition: inherit;
+//       color: $scotch-primary;
+//       transform: scale(1);
+//     }
+//
+//     &:hover i {
+//       color: rgb(255, 111, 111);
+//       transform: scale(1.35);
+//     }
+//   }
+// }
 
 aside {
   font-size: 12px;

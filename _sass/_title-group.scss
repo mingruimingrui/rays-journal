@@ -1,0 +1,108 @@
+.topper {
+  margin-bottom: 50px;
+
+  .img {
+    position: relative;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+    height: 75vh;
+    width: 100%;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  .title-group1 {
+    text-align: center;
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    margin: 0 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    h1.special {
+      margin: 0;
+      font-size: 75px;
+      font-weight: 700;
+    }
+
+    aside {
+      color: white;
+    }
+
+    p {
+      color: white;
+      margin-top: 9px;
+      font-size: 18px;
+    }
+  }
+
+  .scroll-down {
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    width: 30px;
+    bottom: 0;
+    left: calc(50% - 15px);
+    font-size: 1.5em;
+    color: white;
+    transition-duration: 0.5s;
+
+    &:hover {
+      bottom: -5px;
+      color: lightgrey;
+      cursor: pointer;
+    }
+  }
+
+  .title-group2 {
+    text-align: center;
+    padding: 50px 15px;
+
+    p {
+      color: black;
+      max-width: 800px;
+      margin: 25px auto 0;
+    }
+
+    h1.special {
+      position: relative;
+      text-align: center;
+      overflow: hidden;
+      margin: 0;
+      text-transform: uppercase;
+      @extend %oswald;
+      font-size: 50px;
+      line-height: 50px;
+      font-weight: 700;
+      color: rgb(255, 69, 69);
+
+      span {
+        display: inline-block;
+        position: relative;
+        padding: 0 15px;
+        max-width: 1000px;
+
+        &:before, &:after {
+          content: '';
+          position: absolute;
+          display: block;
+          height: 1px;
+          background: #e8e8e8;
+          width: 99999999px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        &:before { left: 100%; }
+        &:after { right: 100%; }
+      }
+    }  // end of h1.special
+  }  // end of title-group2
+}  // end of topper

@@ -5,7 +5,7 @@
     position: relative;
     top: 0;
     left: 0;
-    min-height: 300px;
+    min-height: 400px;
     height: 75vh;
     width: 100%;
     display: block;
@@ -121,15 +121,21 @@
   }
 }
 
-@media only screen and (max-width : 450px) {
+@media only screen and (max-width : 600px) {
   .topper {
     .title-group1, .title-group2 {
       h1.special {
         font-size: 50px
       }
+    }
+  }
+}
 
-      p {
-        font-size: 15px;
+@media only screen and (max-width : 400px) {
+  .topper {
+    .title-group1, .title-group2 {
+      h1.special {
+        font-size: 40px
       }
     }
   }

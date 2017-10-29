@@ -1,35 +1,42 @@
 <nav class="pagination-wrap">
-    <ul class="pagination">
-        {% if paginator.previous_page %}
-        <li>
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-            </a>
-        </li>
-        {% endif %}
 
-        {% for page in (1..paginator.total_pages) %}
-            {% if page == paginator.page %}
-            <li class="active">
-                <a href="#">{{ page }}</a>
-            </li>
-            {% elsif page == 1 %}
-            <li>
-                <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-            </li>
-            {% else %}
-            <li>
-                <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-            </li>
-            {% endif %}
-        {% endfor %}
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><div class="pagination-sym">
+    <i class="fa fa-angle-left"></i>
+  </div></a>
+  {% else %}
+  <div class="pagination-sym"></div>
+  {% endif %}
 
-        {% if paginator.next_page %}
-        <li>
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-            </a>
-        </li>
+  <div class="pagination-self">
+    {% if paginator.total_pages <= 5 %}
+      {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+          <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}"
+             class="active">
+            <div class="pagination-link">{{page}}</div>
+          </a>
+        {% elsif page == 1 %}
+          <a href="/">
+            <div class="pagination-link">{{page}}</div>
+          </a>
+        {% else %}
+          <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">
+            <div class="pagination-link">{{page}}</div>
+          </a>
         {% endif %}
-    </ul>
+      {% endfor %}
+    {% else %}
+    TBI
+    {% endif %}
+  </div>
+
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><div class="pagination-sym">
+    <i class="fa fa-angle-right"></i>
+  </div></a>
+  {% else %}
+  <div class="pagination-sym"></div>
+  {% endif %}
+
 </nav>

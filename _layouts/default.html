@@ -6,6 +6,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
+                  <!-- TODO: comment this out -->
+                  <link rel="stylesheet" href="../{{ site.data.global.url }}/css/style.css">
 
                     {% for post in paginator.posts %}
                         {% include tile.html %}

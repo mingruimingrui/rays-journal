@@ -5,11 +5,12 @@
       {{ post.date | date: "%B %d, %Y" }}
     </aside>
     <a href="{{ post.url | preprend: site.baseurl }}">
-      <h2>{{ post.title }}</h2>
-      <div class="excerpt">{{ post.excerpt | truncatewords: 50 }}</div>
-      <hr>
+      <div class="title-content-container">
+        <h2>{{ post.title }}</h2>
+        <div class="excerpt">{{ post.content | truncatewords: 50 }}</div>
+      </div>
     </a>
-
+    <hr>
     <div class="tags">
       {% if post.reading_duration != emty %}
       <span class="fa fa-clock-o"></span>
@@ -22,9 +23,7 @@
       {% endfor %}
       {% endif %}
     </div>
-
     <hr>
-
   </div>
 </div>
 

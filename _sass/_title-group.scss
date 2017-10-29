@@ -120,3 +120,17 @@
     }
   }
 }
+
+@media only screen and (max-width : 450px) {
+  .topper {
+    .title-group1, .title-group2 {
+      h1.special {
+        font-size: 50px
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}

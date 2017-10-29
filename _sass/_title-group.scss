@@ -106,3 +106,17 @@
     }  // end of h1.special
   }  // end of title-group2
 }  // end of topper
+
+@media only screen and (max-height : 550px) {
+  .topper {
+    .title-group1, .title-group2 {
+      h1.special {
+        font-size: 50px
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}

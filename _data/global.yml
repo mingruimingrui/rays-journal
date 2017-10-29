@@ -1,7 +1,7 @@
 # Site Settings
 title: "Ray's Journal"
 description: 'A personal blog about life, food & machine learning'
-url: '.' # TODO don't forget to change this into www.raysjournal.com
+url: '' # TODO don't forget to change this into www.raysjournal.com
 # footer_text: 'This text is footer text. Footer text goes here.'
 
 # Admin Settings

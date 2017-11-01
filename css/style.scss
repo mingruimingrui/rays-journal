@@ -2,6 +2,7 @@
 ---
 @import '../_sass/bootstrap';
 @import '../_sass/syntax-highlighting';
+@import 'nav-bar';
 @import 'title-group';
 @import 'tile';
 @import 'pagination';
@@ -43,7 +44,6 @@ h1, h2, h3, h4, h5, h6 { @extend %oswald; }
   color: #fff;
 }
 
-
 // nav.navbar {
 //   margin: 0;
 //
@@ -66,47 +66,6 @@ h1, h2, h3, h4, h5, h6 { @extend %oswald; }
 //       transform: scale(1.35);
 //     }
 //   }
-// }
-
-.menu-sym {
-  z-index: 99;
-  position: absolute;
-  background: none;
-  border: none;
-  width: 36px;
-  height: 36px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 15px;
-  color: white;
-  right: 50px;
-  top: 20px;
-  cursor: pointer;
-}
-//
-// .w3-modal-content {
-//   width: 200px;
-//   position: absolute;
-//   right: 0;
-//   z-index: 100;
-//
-//   ul {
-//     list-style-type: none;
-//     margin: 0;
-//     padding: 0;
-//
-//     li {
-//       margin: 1px;
-//       background-color: rgba(0,0,0,0.5);
-//
-//       a {
-//         color: white;
-//       }
-//     }
-//
-//   }
-//
 // }
 
 aside {

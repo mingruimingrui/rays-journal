@@ -64,11 +64,13 @@ $(window).resize(function() {
 =            WINDOW IS SCROLLED            =
 ==========================================*/
 $(window).scroll(function() {
-  if (window.innerWidth > 550 & window.pageYOffset > $('.topper').height()) {
-    $('.open-nav-container').css('position', 'fixed');
-    $('.open-nav-container').css('color', 'black');
-  } else {
-    $('.open-nav-container').css('position', 'absolute');
-    $('.open-nav-container').css('color', 'white');
+  if ($('.img').length > 0) {
+    if (window.innerWidth > 550 & window.pageYOffset > $('.topper').height()) {
+      $('.open-nav-container').css('position', 'fixed');
+      $('.open-nav-container').css('color', 'black');
+    } else {
+      $('.open-nav-container').css('position', 'absolute');
+      $('.open-nav-container').css('color', 'white');
+    }
   }
 });

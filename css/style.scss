@@ -14,7 +14,7 @@
 
 body {
   @extend %roboto;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 30px;
   padding-top: 0px;
   -webkit-font-smoothing: antialiased;
@@ -30,6 +30,7 @@ a {
   text-decoration: none !important;
   transition: all 225ms ease;
   color: rgb(255, 69, 69);
+  font-size: 15px;
 
   &:hover { color: #6165FF; }
 }

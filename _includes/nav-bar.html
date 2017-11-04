@@ -6,10 +6,19 @@
 
 <div class="nav-bar-container">
   <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Github</a></li>
-    <li><a href="#">LinkedIn</a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/">About</a></li>
+    <li><a href="https://github.com/mingruimingrui">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/mingruimingrui/">LinkedIn</a></li>
     <li><div id='close-nav' style="font-family:cursive">X</div></li>
   </ul>
 </div>
+
+{% if page.featured_image == null %}
+<style media="screen">
+.open-nav-container {
+  position: absolute;
+  color: black;
+}
+</style>
+{% endif %}

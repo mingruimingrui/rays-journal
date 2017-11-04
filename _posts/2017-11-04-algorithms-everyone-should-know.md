@@ -1,12 +1,12 @@
 ---
 layout: inner
-title: 'Machine learning algorithms everyone* should know'
+title: 'Machine learning algorithms everyone should know'
 date: 2017-11-03 11:26:34
 reading_duration: 10
 tags: ml algo
 featured_image: 'http://placekitten.com/1500/1000'
 image_opacity: 0.4
-lead_text: 'A basic ML cookbook to get you started. *By everyone I mean those who reads this post!'
+lead_text: 'A basic ML cookbook to get you started.'
 ---
 
 One of the questions I frequently get is how do you get into machine learning. To save myself from having to explain the same generic thing over and over again, here's a brief guide/checklist to getting started in the field. I'm basing most of these off my own personal experience, so there might be a couple of things that people will disagree with.

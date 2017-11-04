@@ -1,6 +1,6 @@
 ---
 layout: inner
-title: 'Machine learning algorithms everyone should know*'
+title: 'Machine learning algorithms everyone* should know'
 date: 2017-11-03 11:26:34
 reading_duration: 10
 tags: ml algo

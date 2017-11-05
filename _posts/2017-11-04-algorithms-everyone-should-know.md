@@ -55,7 +55,7 @@ The best courses do not necessarily need to cover absolutely everything because 
   - The lack of usage is mainly due to boosted trees
 - Vanilla Neural Network
   - Also called the multi-layered-perceptron and the fully connected network, goes by many names
-  - Very loosely based off neurons but there really aren't many links.
+  - Very loosely based off how the brain works but there really aren't many links.
   - Rarely used due to it's massive inefficiency
 
 #### Key Unsupervised Learning Algorithms
@@ -73,8 +73,12 @@ The best courses do not necessarily need to cover absolutely everything because 
   - An alternative to ensembling which often gives better results
 - Reinforcement learning
   - This is how AlphaGo and self-driving cars work! But honestly RL deserves it's own post
+  - Basically learning from interactions with environment and treating things like a game to achieve the highscore
 - Deep learning
-  - Is also a massive field and it doesn't do it any justice to label it under a single names
+  - A massive and deep field (no pun intended)
+  - Used for task like but not limited to computer vision, image captioning, signal-processing, language translation, image/voice generation, photo-restoration
+  - Honestly just [look at it](https://machinelearningmastery.com/inspirational-applications-deep-learning/)
+  - Often RL involves deep learning as well but that's not always the case
   - Do check out [Stanford's lectures](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2Fplaylist%3Flist%3DPL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&h=ATOYUU1ZU9ODP5JuXmx5EfyvZEACVl8S3GrQBlztkcLUIP3py4AOdR16VQiRQQWYtAfHchtOdQIWMSCQfeIcW2RwIzS8Nf7UciZQu0VqwnwTzU3M8hPz35dd29JLNDAzP_9G3Udj1rkraw) on YouTube for an in-depth introduction
 
 <br>

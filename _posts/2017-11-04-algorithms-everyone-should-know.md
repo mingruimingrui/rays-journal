@@ -89,11 +89,9 @@ The best courses do not necessarily need to cover absolutely everything, the fie
 <br>
 
 ### "Choosing" between Data-science and Deep Learning
-I say "choosing" rather loosely because people tend to learn things from both sides. Depending on what you wish to do, you might want to have a data-science focus or maybe gear your skill-set more towards deep neural networks. 90% of the times when people says that they wish to something related to machine learning, they are referring to data-science rather than AI/deep learning. There is a somewhat noticeable difference between the 2 fields but They are both part of the tool kit of a data engineer. That said I personally reach for data science much more often than deep learning when solving the more mundane tasks
+Choosing is a hard word, people tend to learn things from both sides. Depending on what you wish to do, you might want to have a data-science focus or maybe gear your skill-set more towards deep neural networks. 90% of the times when people says that they wish to something related to machine learning, they are referring to data-science rather than AI/deep learning. There is a somewhat noticeable difference between the 2 fields but they are both part of the tool kit of a data engineer. That said I personally reach for data science much more often than deep learning when solving the more mundane tasks. I'd also recommend beginners to start from there.
 
 <br>
 
-### Learning to have fun while learning
-Let's face it, learning is a chore. I personally don't enjoy grinding through textbooks and research papers unless it is for the purpose of solving a problem in a project I'm working on. Probably my greatest take away from learning ML is learning to learn. Implementation is my way of getting myself to know more stuff and quite frankly it is also a pretty enjoyable thing to do. Heck I'd do it in my free time.
-
-ML is not an easy subject to get a hang of, but getting grips with something difficult rewards people with a huge sense of accomplishment. So don't be afraid of doing something hard!
+### Figuring out the way you learn best
+Learning machine learning to many people is really more of an experimental process where they stumble across something new. I don't personally know of any two data scientist/AI researcher who took the same exact paths to learning the subject.

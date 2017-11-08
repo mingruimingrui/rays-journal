@@ -81,6 +81,36 @@ aside {
   }
 }
 
+.scroll-up {
+  position: fixed;
+  z-index: 99;
+  right: 50px;
+  bottom: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 1px;
+  background-color: rgba(200,200,200,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  opacity: 0;
+
+  span {
+    font-size: 18px;
+    color: rgba(150,150,150,0.5);
+  }
+
+  &:hover {
+    background-color: rgba(200,200,200,0.5);
+
+    span {
+      color: rgb(150,150,150);
+    }
+  }
+}
+
 .site-footer {
   margin-top: 200px;
 }

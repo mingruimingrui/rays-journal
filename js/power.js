@@ -16,6 +16,15 @@ $(function() {
       navigator.userAgent.match(/Windows Phone/i)
     );
 
+    // nav
+    if (window.onmobile) {
+      // nav on mobile
+      $('.nav-bar-desktop').hide();
+    } else {
+      // nav on desktop
+      $('.nav-bar-mobile').hide();
+    };
+
 });
 
 
@@ -39,14 +48,7 @@ $(window).load(function() {
     }, 'slow');
   });
 
-  // nav
-  if (window.onmobile) {
-    // nav on mobile
-    $('.nav-bar-desktop').hide();
-  } else {
-    // nav on desktop
-    $('.nav-bar-mobile').hide();
-  };
+
 
 });
 

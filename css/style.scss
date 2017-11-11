@@ -19,12 +19,15 @@ body {
   padding-top: 0px;
   -webkit-font-smoothing: antialiased;
 }
+
 p {
   color: #777;
   font-size: 15px;
   margin-bottom: 30px;
 }
+
 section, header, footer, main, article, nav, aside { position: relative; }
+
 a {
   outline: none !important;
   text-decoration: none !important;
@@ -34,40 +37,18 @@ a {
 
   &:hover { color: #6165FF; }
 }
+
 .btn {
   text-transform: uppercase;
   font-weight: 400;
   @extend %oswald;
 }
+
 h1, h2, h3, h4, h5, h6 { @extend %oswald; }
 ::selection {
   background: #086AFF;
   color: #fff;
 }
-
-// nav.navbar {
-//   margin: 0;
-//
-//   a {
-//     text-transform: uppercase;
-//     font-size: 16px;
-//   }
-//
-//   .navbar-brand {
-//     text-transform: none;
-//
-//     i {
-//       transition: inherit;
-//       color: $scotch-primary;
-//       transform: scale(1);
-//     }
-//
-//     &:hover i {
-//       color: rgb(255, 111, 111);
-//       transform: scale(1.35);
-//     }
-//   }
-// }
 
 aside {
   font-size: 12px;
@@ -81,9 +62,13 @@ aside {
   }
 }
 
+pre {
+  margin: 75px -100px;
+}
+
 .scroll-up {
   position: fixed;
-  z-index: 99;
+  z-index: 98;
   right: 50px;
   bottom: 30px;
   width: 30px;
@@ -119,12 +104,52 @@ aside {
   margin-top: 200px;
 }
 
-.pagination-wrap {
-  text-align: center;
+.menu-burger {
+  width: 25px;
+  height: 25px;
+  z-index: 99;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+
+  span {
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background-color: white;
+    transition-duration: 0.5s;
+    left: 0;
+  }
+
+  span:nth-child(1) {
+    top: 2px;
+  }
+
+  span:nth-child(2), span:nth-child(3) {
+    top: 11px;
+    transform: rotate(0deg);
+  }
+
+  span:nth-child(4) {
+    top: 20px;
+  }
+
 }
 
-pre {
-  margin: 75px -100px;
+.menu-burger-back {
+  span:nth-child(1), span:nth-child(4) {
+    top: 11px;
+    width: 0;
+    left: 50%;
+  }
+  
+  span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+
+  span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
 }
 
 
@@ -135,5 +160,6 @@ pre {
 @media only screen and (max-width : 480px) {
 
 }
+
 
 @import 'toggle-class';

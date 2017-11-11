@@ -1,6 +1,22 @@
 <div class="nav-bar-desktop">
-  <a href="/">Home</a>
-  <a href="/" target="_blank">About</a>
-  <a href="https://github.com/mingruimingrui" target="_blank">Github</a>
-  <a href="https://www.linkedin.com/in/mingruimingrui/" target="_blank">LinkedIn</a>
+  {% for item in site.data.nav.main %}
+  <a href="{{ item.url }}" target="_">{{ item.text }}</a>
+  {% endfor %}
+</div>
+
+<div class="menu-btn menu-burger">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<div class="nav-bar-mobile">
+  <!-- <div class=""><a href="/">Home</a></div>
+  <div class=""><a href="/">About</a></div>
+  <div class=""><a href="/">Github</a></div>
+  <div class=""><a href="/">LinkedIn</a></div> -->
+  {% for item in site.data.nav.main %}
+  <div><a href="{{ item.url }}" target="{{ item.target }}">{{ item.text }}</a></div>
+  {% endfor %}
 </div>

@@ -22,6 +22,7 @@ $(function() {
       $('.nav-bar-desktop').hide();
     } else {
       // nav on desktop
+      $('.menu-btn').hide();
       $('.nav-bar-mobile').hide();
     };
 
@@ -48,7 +49,13 @@ $(window).load(function() {
     }, 'slow');
   });
 
-
+  // menu-burger
+  $('.menu-burger').click(event => {
+    event.preventDefault();
+    $('.menu-burger').toggleClass('menu-burger-back');
+    $('.menu-burger').toggleClass('fixed');
+    $('.nav-bar-mobile').toggleClass('visible');
+  })
 
 });
 

@@ -142,7 +142,7 @@ pre {
     width: 0;
     left: 50%;
   }
-  
+
   span:nth-child(2) {
     transform: rotate(45deg);
   }
@@ -154,7 +154,9 @@ pre {
 
 
 @media only screen and (max-width : 991px) {
-
+  .scroll-up {
+    right: 30px;
+  }
 }
 
 @media only screen and (max-width : 480px) {

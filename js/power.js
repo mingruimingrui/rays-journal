@@ -23,7 +23,7 @@ $(function() {
     } else {
       // nav on desktop
       $('.menu-btn').hide();
-      $('.nav-bar-mobile').hide();
+      $('.nav-bar-mobile-container').hide();
     };
 
 });
@@ -52,6 +52,11 @@ $(window).load(function() {
   // menu-burger
   $('.menu-burger').click(event => {
     event.preventDefault();
+    if ($('.nav-bar-mobile-container').css('top') == '0px') {
+      setTimeout(() => $('.nav-bar-mobile-container').toggleClass('onScreen'), 500);
+    } else {
+      $('.nav-bar-mobile-container').toggleClass('onScreen');
+    }
     $('.menu-burger').toggleClass('menu-burger-back');
     $('.menu-burger').toggleClass('fixed');
     $('.nav-bar-mobile').toggleClass('visible');

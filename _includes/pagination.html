@@ -11,20 +11,12 @@
   <div class="pagination-self">
     {% if paginator.total_pages <= 5 %}
       {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-          <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}"
-             class="active">
-            <div class="pagination-link">{{page}}</div>
-          </a>
-        {% elsif page == 1 %}
-          <a href="/">
-            <div class="pagination-link">{{page}}</div>
-          </a>
-        {% else %}
-          <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">
-            <div class="pagination-link">{{page}}</div>
-          </a>
-        {% endif %}
+        <a class="{% if page == paginator.page %} active {% endif %}"
+          href="{% if page == 1 %} / {% else %}
+            {{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}
+          {% endif %}">
+          <div class="pagination-link">{{page}}</div>
+        </a>
       {% endfor %}
     {% else %}
     TBI
